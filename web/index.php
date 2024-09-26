@@ -43,4 +43,20 @@
 
     <a href="blog.php">Blogs</a>
 </body>
+<footer>
+    <hr>
+    <h1>Jau reģistrējušies: </h1>
+    <?php 
+        $registered = array(
+            array("name" => "Maksims", "email" => "mc@gmail.com", "level" => "Advanced"),
+            array("name" => "Daniils", "email" => "dk@icloud.com", "level" => "Intermediate"),
+            array("name" => "Jeff", "email" => "beazos@amazon.com", "level" => "Beginner"),
+        );
+
+
+
+    ?>
+
+
+</footer>
 </html>
