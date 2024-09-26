@@ -19,29 +19,29 @@ class Task {
         $this->description = $description;
     }
 
-    public function displayTask() {
+    public function displayTask(&$task) {
         echo "ID: " . $this->id . "\n";
         echo "Title: " . $this->title . "\n";
         echo "Description: " . $this->description . "\n";
         echo "--------------------------\n";
     }
 }
+$tasks = [
+    array("id" => 1, "title" => "eat", "description" => "eat food"),
+];
 
 
-
-function displayAllTasks($tasks) {
+function displayAllTasks(&$tasks) {
     if (empty($tasks)) {
         echo "No tasks available.\n";
     } else {
         foreach ($tasks as $task) {
-            echo ("Task ID: " . $task['id'] . "Task title: " . $task['title'] . ", Task description: " . $task['description']);
+            displayTask($task);
         }
     }
 }
 
-$tasks = [
-array("id" => 1, "title" => "eat", "description" => "eat food"),
-];
+
 function createTask(&$tasks) {
     $title = readline("Enter Task Title: ");
     $description = readline("Enter Task Description: ");
@@ -50,7 +50,8 @@ function createTask(&$tasks) {
     $lastKey = key($tasks);
     $id = $lastKey + 1;
 
-    $tasks[$id] = new Task($id, $title, $description);
+    $task = new Task($id, $title, $description);
+    $tasks[$id] = array("id" => $id, "name" => $title, "description" => $description);
     echo "Task Created.\n";
 }
 
