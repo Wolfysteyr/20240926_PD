@@ -52,7 +52,11 @@
             array("name" => "Daniils", "email" => "dk@icloud.com", "level" => "Intermediate"),
             array("name" => "Jeff", "email" => "beazos@amazon.com", "level" => "Beginner"),
         );
-
+        
+        foreach($registered as $arr){
+            echo ("Vārds: " . $arr['name'] . ", Email: " . $arr['email'] . ", Līmenis: " . $arr['level']);
+            echo ("<br> <br>");
+        }
 
 
     ?>
