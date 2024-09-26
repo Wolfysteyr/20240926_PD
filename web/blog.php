@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<link rel="stylesheet" href="css/styles.css">
-
+    
     <div class="biografija">
         <h2 class="small-heading">Biogrāfija</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus, labore eveniet, officia voluptatum tempore laudantium facilis praesentium possimus, ratione deserunt mollitia doloribus illum inventore commodi eaque. Ipsum earum consectetur animi sint quam laboriosam illum aut veritatis recusandae ullam repellat, maiores voluptatibus? Aliquam veniam ex natus. Autem aperiam ipsum soluta sequi illo numquam magnam? Esse amet voluptates recusandae nemo, quis nam corporis, facere provident adipisci quo voluptas quae saepe odio, nostrum cum deserunt sint culpa. Adipisci id quo, totam molestiae culpa tempore eveniet nulla corrupti fugit officia praesentium aliquid omnis dolorem vitae exercitationem maxime perferendis sunt quaerat dignissimos dolores voluptas.</p>
@@ -29,5 +28,6 @@
         </ul>
     </div>
     <a href="index.php">Galvenā lapa</a>
+    
 </body>
 </html>
