@@ -27,7 +27,7 @@ class Task {
     }
 }
 
-$tasks = [];
+
 
 function displayAllTasks($tasks) {
     if (empty($tasks)) {
@@ -39,6 +39,9 @@ function displayAllTasks($tasks) {
     }
 }
 
+$tasks = [
+array("id" => 1, "title" => "eat", "description" => "eat food"),
+];
 function createTask(&$tasks) {
     $title = readline("Enter Task Title: ");
     $description = readline("Enter Task Description: ");
@@ -47,7 +50,7 @@ function createTask(&$tasks) {
     $lastKey = key($tasks);
     $id = $lastKey + 1;
 
-    $tasks[$id] = new Task();
+    $tasks[$id] = new Task($id, $title, $description);
     echo "Task Created.\n";
 }
 
