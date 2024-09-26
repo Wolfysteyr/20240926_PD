@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piesakies webināram!</title>
     <h1>Piesakies webināram!</h1>
+
+    <script src="js/app.js"></script>
 </head>
 <body>
     <div class="formstuff">
@@ -36,5 +38,9 @@
         <input type="submit" value="Pieteikties">
 
     </div>
+
+    <br>
+
+    <a href="blog.php">Blogs</a>
 </body>
 </html>
