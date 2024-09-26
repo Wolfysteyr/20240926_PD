@@ -9,8 +9,8 @@
     <script src="js/app.js"></script>
 </head>
 <body>
-    <div class="formstuff">
-        <form method="post">
+    <div  class="formstuff">
+        <form action="confirmation.php" method="post">
             <label for="name">Vārds: </label>
             <input type="text" name="name" id="name"><br><br>
 
@@ -23,7 +23,6 @@
                 <option value="Intermediate">Intermediate</option>
                 <option value="Advanced">Advanced</option>
             </select>
-        </for>
 
         
         <br>
@@ -36,6 +35,7 @@
         <br>
         
         <input type="submit" value="Pieteikties">
+        </form>
 
     </div>
 
